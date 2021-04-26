@@ -1,0 +1,25 @@
+import calendar
+
+import time
+
+
+
+print("Note:\n Please give response in numbers only")
+
+a = int(input("Please Enter desired year:"))
+
+b = int(input("Please select the  desired month"))
+
+print("Working on your response...")
+
+if b>0 and b<=12:
+
+    time.sleep(1)
+
+    print(calendar.month(a, b))
+
+
+
+else:
+
+    print("Please Enter valid response") 
