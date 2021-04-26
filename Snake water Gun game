@@ -1,0 +1,33 @@
+import random
+
+
+
+l=["Snake","Water","Gun"]
+
+c=random.choice(l)
+
+d=int(input("For snake 1\nFor water 2\nFor Gun 3"))
+
+
+
+if c == "Snake" and d == 3:
+
+    print("Congratulations You Won!")
+
+
+
+elif c == "Water" and d == 1:
+
+    print("Congratulations You Won!")
+
+
+
+elif c == "Gun" and d == 2:
+
+    print("Congratulations You Won!")
+
+
+
+else:
+
+    print("Better luck next time")
