@@ -1,0 +1,23 @@
+import pyttsx3
+
+import pyPDF2
+
+
+
+book = open('The Alchemist', 'rb')
+
+PdfReader = pyPDF2.pdfFileReader(book)
+
+pages = PdfReader.numpages
+
+print(pages)
+
+speaker = pyttsx3.init()
+
+page = PdfReader.getPage(0)
+
+text = page.extractText()
+
+speaker.say(text)
+
+speaker.runAndWait() 
