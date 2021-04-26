@@ -1,0 +1,21 @@
+ import datetime
+
+
+
+hour = int(datetime.datetime.now().hour)
+
+if hour >=0 and hour<12:
+
+    print("Good morning\n\n ")
+
+
+
+elif hour>12 and hour <18:
+
+    print("Good evening\n\n ")
+
+
+
+else:
+
+    print("Good evening\n\n")
