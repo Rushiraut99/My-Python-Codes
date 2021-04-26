@@ -1,0 +1,37 @@
+n=18
+
+
+
+for i in range(9):
+
+    a = int(input("Plesae Enter a number :"))
+
+
+
+    if a>n :
+
+        print("please try again with smaller number")
+
+
+
+    elif a<n:
+
+        print("please try again with bigger number")
+
+
+
+    elif a==n:
+
+        print("Congratulations your guess is correct")
+
+        break
+
+
+
+    print(f"Number of guesses left are :{8-i}\n")
+
+
+
+    if 8-i==0:
+
+        print("Game over") 
